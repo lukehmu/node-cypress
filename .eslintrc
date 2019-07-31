@@ -1,0 +1,22 @@
+{
+    "extends": [
+        "airbnb-base",
+        "plugin:cypress/recommended"
+    ],
+    "env": {
+        "es6": true
+    },
+    "globals": {
+        "Framework": true
+    },
+    "rules": {
+        "semi": [2, "never"],
+        "no-console": "off",
+        "linebreak-style": [0, "error", "windows"],
+        //fixes an issue with Express
+        "no-unused-vars": ["error", { "argsIgnorePattern": "next|value" }],
+    },
+    "parserOptions": {
+        "sourceType": "module"
+    }
+}
